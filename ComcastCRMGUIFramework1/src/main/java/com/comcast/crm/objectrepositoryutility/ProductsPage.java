@@ -7,4 +7,9 @@ public class ProductsPage {
 
 	@FindBy(xpath="//input[@alt='Create Product...']")
 	private WebElement createProductImgBtn;
+	
+
+	@FindBy(name="search")
+	private WebElement ele2;
 }
+
