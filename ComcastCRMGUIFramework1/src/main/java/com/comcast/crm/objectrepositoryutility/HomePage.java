@@ -58,6 +58,12 @@ public class HomePage extends WebDriverUtility{
 	public WebElement getProductLink() {
 		return productLink;
 	}
+	
+	
+
+	public WebDriver getDriver() {
+		return driver;
+	}
 
 	public WebElement getAdminImg() {
 		return adminImg;
