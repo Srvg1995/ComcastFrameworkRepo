@@ -17,30 +17,38 @@ public class OrganizationInfoPage {
 private WebElement headerMsg;
 
  @FindBy(id="dtlview_Industry")
- private WebElement headerMsg1;
+ private WebElement industry;
  
  @FindBy(xpath = "//td[@id='mouseArea_Type']")  //xpath by attribute-Done by Sanjay sir
- private WebElement headerMsg2;
+ private WebElement indType;
  
  @FindBy(id="dtlview_Phone")
- private WebElement headerMsg3;
+ private WebElement phoneNum;
+ 
+ @FindBy(linkText = "Contacts")
+ private WebElement ContactLink;
  
  
  
- public WebElement getHeaderMsg() {
+ 
+ public WebElement getContactLink() {
+	return ContactLink;
+}
+
+public WebElement getHeaderMsg() {
 		return headerMsg;
 	}
  
-public WebElement getHeaderMsg1() {
-	return headerMsg1;
+public WebElement getindustry() {
+	return industry;
 }
 
-public WebElement getHeaderMsg2() {
-	return headerMsg2;
+public WebElement getindType() {
+	return indType;
 }
 
-public WebElement getHeaderMsg3() {
-	return headerMsg3;
+public WebElement getphoneNum() {
+	return phoneNum;
 }
 
 

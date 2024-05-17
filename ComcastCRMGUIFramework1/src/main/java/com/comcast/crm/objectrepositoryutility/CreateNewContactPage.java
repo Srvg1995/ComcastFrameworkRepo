@@ -6,7 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-public class CreateNewContactPage {
+import com.comcast.crm.generic.webdriverutility.WebDriverUtility;
+
+public class CreateNewContactPage extends WebDriverUtility{
 
 	WebDriver driver;         
 	public CreateNewContactPage(WebDriver driver) {       
@@ -24,6 +26,16 @@ public class CreateNewContactPage {
 
 	@FindBy(name="support_end_date")
 	private WebElement endDateEdt;
+	
+	@FindBy (id = "dtlview_Support Start Date")
+	private WebElement actStartDate;
+	
+	@FindBy (id = "dtlview_Support End Date")
+	private WebElement actEndDate;
+	
+	@FindBy (xpath = "//input[@name='account_name']/following-sibling::img")
+	private WebElement clickOnLookup;
+	
 
 	public WebElement getLastNameEdt() {
 		return lastNameEdt;
@@ -41,19 +53,18 @@ public class CreateNewContactPage {
 		return endDateEdt;
 	}
 
-	public void createContact(String lastName) {
-		lastNameEdt.sendKeys(lastName);
-		saveBtn.click();
+	public WebElement getActStartDate() {
+		return actStartDate;
 	}
-	public void createContactSD(String startDate) throws InterruptedException {
-		startDateEdt.clear();
-		Thread.sleep(1000);
-		startDateEdt.sendKeys(startDate);
+
+	public WebElement getActEndDate() {
+		return actEndDate;
 	}
-	public void createContactED(String endDate) throws InterruptedException {
-		endDateEdt.clear();
-		Thread.sleep(1000);
-		endDateEdt.sendKeys(endDate);
+
+	public WebElement getClickOnLookup() {
+		return clickOnLookup;
 	}
-}
+
+	}
+
 

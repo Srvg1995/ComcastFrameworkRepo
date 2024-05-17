@@ -50,7 +50,7 @@ public class CreateOrganizationTest extends BaseClass {
 		UtilityClassobject.getTest().log(Status.INFO, "navigate to  CreateOrg Page");
 		OrganizationsPage cnp = new OrganizationsPage(driver);
 		cnp.getCreateNewOrgBtn().click();
-	//Assert.fail();
+//Assert.fail();
 		// step4:enter all the details & create new organization
 		UtilityClassobject.getTest().log(Status.INFO, "Create a new Org");
 		CreateNewOrganizationPage cnop = new CreateNewOrganizationPage(driver);
@@ -86,14 +86,14 @@ public class CreateOrganizationTest extends BaseClass {
 
 		// verify the industries and type info
 		OrganizationInfoPage oip = new OrganizationInfoPage(driver);
-		String actIndustries = oip.getHeaderMsg1().getText();
+		String actIndustries = oip.getindustry().getText();
 		if (actIndustries.equals(industry)) {
 			System.out.println(industry + "information is verified==PASS");
 		} else {
 			System.out.println(industry + "information is not verified==FAIL");
 		}
 
-		String actType = oip.getHeaderMsg2().getText();
+		String actType = oip.getindType().getText();
 		if (actType.equals(type)) {
 			System.out.println(type + "information is verified==PASS");
 		} else {
@@ -121,7 +121,7 @@ public class CreateOrganizationTest extends BaseClass {
 
 		// verify Header phone Number info Expected result
 		OrganizationInfoPage oip = new OrganizationInfoPage(driver);
-		String actPhoneNumber = oip.getHeaderMsg3().getText();
+		String actPhoneNumber = oip.getphoneNum().getText();
 		if (actPhoneNumber.equals(phoneNumber)) {
 			System.out.println(phoneNumber + "information is verified==PASS");
 		} else {

@@ -80,8 +80,9 @@ public class HomePage extends WebDriverUtility{
 		campaignLink.click();
 	}
 
-	public void logout()
+	public void logout() throws InterruptedException
 	{
+		Thread.sleep(2000);
 		mousemoveOnElement(driver, adminImg);
 		signOutLnk.click();
 	}
