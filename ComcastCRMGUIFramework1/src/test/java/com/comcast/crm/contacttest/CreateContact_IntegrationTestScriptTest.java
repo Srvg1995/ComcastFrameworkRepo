@@ -36,7 +36,7 @@ import com.comcast.crm.objectrepositoryutility.OrganizationsPage;
 /**
  * @author gagan
  */
-public class CreateContactTest_IntegrationTestScript extends BaseClass {
+public class CreateContact_IntegrationTestScriptTest extends BaseClass {
 
 	@Test // (/*groups="smokeTest"*/)
 	public void createContactTest() throws Throwable {
