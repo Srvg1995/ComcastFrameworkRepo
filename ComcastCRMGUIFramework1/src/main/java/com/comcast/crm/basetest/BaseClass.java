@@ -41,7 +41,7 @@ public class BaseClass {
 		dblib.getDbconnection();
 	}
 
-	//@Parameters("BROWSER")  //@Parameters-This annotation should be selected from TestNG only.
+	//@Parameters("BROWSER")  /*This is for Parallel c/s browser execution*/ /*@Parameters-This annotation should be selected from TestNG only*/
 	@BeforeClass//(groups={"smokeTest","regressionTest"})            
 	public void configBC(/*String browser*/) throws Throwable {     //here we have deleted the property file program inorder to sync with @Parameters
 		System.out.println("===Launch the BROWSER===");
