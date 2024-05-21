@@ -26,7 +26,7 @@ import com.comcast.crm.objectrepositoryutility.HomePage;
 import com.comcast.crm.objectrepositoryutility.LoginPage;
 
 public class BaseClass {
-	/* Create Object*/
+	/* Create Object*///Below Objects are created to access the respective methods & also we made it as public ,so that we can access it from outside the package (/class also)
 	public FileUtility flib=new FileUtility();
 	public ExcelUtility elib=new ExcelUtility();
 	public JavaUtility jlib=new JavaUtility();
