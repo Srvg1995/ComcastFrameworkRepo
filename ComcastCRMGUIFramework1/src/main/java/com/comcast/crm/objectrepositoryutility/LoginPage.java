@@ -18,7 +18,7 @@ public class LoginPage extends WebDriverUtility {
 
 	//Rule3:object initialization                 
 	WebDriver driver;         
-	public LoginPage(WebDriver driver) {        
+	public LoginPage(WebDriver driver) {    //constructor     
 		this.driver=driver;
 		  PageFactory.initElements(driver,this);
 
@@ -54,7 +54,7 @@ public class LoginPage extends WebDriverUtility {
  * @param username
  * @param password
  */
-     //Rule5:provide Action/object utilization(business logic)
+     //Rule5:provide Action/object utilization(business Action)
 	public void loginToapp(String url,String username,String password) {
 		waitForPageToLoad(driver);
 		driver.get(url);

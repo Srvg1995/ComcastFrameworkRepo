@@ -1,3 +1,4 @@
+
 package com.comcast.crm.generic.webdriverutility;
 
 import java.time.Duration;
@@ -76,11 +77,11 @@ public class WebDriverUtility {
      }
      public void select(WebElement element,String text) {
     	 Select sel=new Select(element);
-    	 sel.selectByVisibleText(text);
+    	 sel.selectByVisibleText(text); //To handle dynamic dropdown
      }
      public void select(WebElement element,int index) {
     	 Select sel=new Select(element);
-    	 sel.selectByIndex(index);
+    	 sel.selectByIndex(index); //To handle static dropdown
      }
      
      public void mousemoveOnElement(WebDriver driver,WebElement element) {

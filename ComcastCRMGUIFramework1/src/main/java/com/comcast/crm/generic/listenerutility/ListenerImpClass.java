@@ -26,7 +26,7 @@ public class ListenerImpClass implements ITestListener,ISuiteListener{
 	
 	
 	public ExtentReports report; //If we want to use this report in every TC,make this variable as static.
-	public static ExtentTest test; //If it make it as Static variable without threads,this will not participating in parallel execution,so need to create a class like this(public class UtilityClassobject)which is done now in webdriver utility.
+	public static ExtentTest test; //If we make it as Static variable without threads,this will not participating in parallel execution,so need to create a class like this(public class UtilityClassobject)which is done now in webdriver utility.
 	//To get all these below @Override Methods,we should Rightclick-select source-click on override/implement methods option-select for which we need to override-click on OK.
 	
 	@Override

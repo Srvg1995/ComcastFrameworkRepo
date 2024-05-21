@@ -46,7 +46,7 @@ public class BaseClass {
 	public void configBC(/*String browser*/) throws Throwable {     //here we have deleted the property file program inorder to sync with @Parameters
 		System.out.println("===Launch the BROWSER===");
 		String BROWSER = flib.getDataFromPropertiesFile("browser");  //Here this line(flib.getDataFromPropertiesFile("browser");) can be commented because whenever we are getting the parameters from XML Suite Files,so need not to take it from Property file.
-		//String BROWSER = System.getProperty("browser");     //This line is to run with CMD line without Eclipse
+		//String BROWSER = System.getProperty("browser");     //This line is to run(recieve run time parameters) with CMD line without Eclipse
 		
 		if(BROWSER.equals("chrome")) {
 			driver=new ChromeDriver();}

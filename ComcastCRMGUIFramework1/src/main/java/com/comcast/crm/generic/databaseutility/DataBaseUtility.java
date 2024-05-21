@@ -53,7 +53,7 @@ public class DataBaseUtility {
 	return result;
 	}
 	
-	public int executeNonselecyQuery(String query)
+	public int executeNonselectQuery(String query)
 	{
 		int result=0;
 		try {
