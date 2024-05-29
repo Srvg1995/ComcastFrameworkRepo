@@ -82,9 +82,10 @@ public class BaseClass {
 		System.out.println("==Logout==");
 		HomePage hp = new HomePage(driver);
 		hp.logout();
+		
 	}
 	@AfterClass//(groups={"smokeTest","regressionTest"})
-	public void configAC() {
+	public void configAC() throws InterruptedException {
 		System.out.println("===Close the BROWSER===");
 		driver.quit();
 	}
