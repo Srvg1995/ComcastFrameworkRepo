@@ -122,6 +122,7 @@ public class CreateOrganizationTest extends BaseClass {
 		// verify Header phone Number info Expected result
 		OrganizationInfoPage oip = new OrganizationInfoPage(driver);
 		String actPhoneNumber = oip.getphoneNum().getText();
+		
 		if (actPhoneNumber.equals(phoneNumber)) {
 			System.out.println(phoneNumber + "information is verified==PASS");
 		} else {

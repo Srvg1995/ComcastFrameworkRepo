@@ -110,8 +110,7 @@ public class CreateContact_IntegrationTestScriptTest extends BaseClass {
 		System.out.println(endDate + " information is verified==PASS");
 
 		
-		
-		
+ /*Below are the Verification Process with If-Else statement which is not at all to be used*/
 //		if (actStartDate.equals(startDate)) {
 //			System.out.println(startDate + " information is verified==PASS");
 //		} else {
@@ -195,4 +194,9 @@ public class CreateContact_IntegrationTestScriptTest extends BaseClass {
 		}
 
 	}
+	
+	
+	
+	
+	//msg
 }
