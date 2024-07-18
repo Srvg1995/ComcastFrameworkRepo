@@ -33,7 +33,7 @@ public class CreateNewContactPage extends WebDriverUtility{
 	@FindBy (id = "dtlview_Support End Date")
 	private WebElement actEndDate;
 	
-	@FindBy (xpath = "//input[@name='account_name']/following-sibling::img")
+	@FindBy (xpath = "//input[@name='account_name']/following-sibling::img") //new concept
 	private WebElement clickOnLookup;
 	
 

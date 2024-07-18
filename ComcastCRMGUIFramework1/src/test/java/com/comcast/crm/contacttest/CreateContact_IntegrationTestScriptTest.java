@@ -195,8 +195,4 @@ public class CreateContact_IntegrationTestScriptTest extends BaseClass {
 
 	}
 	
-	
-	
-	
-	//msg
 }
