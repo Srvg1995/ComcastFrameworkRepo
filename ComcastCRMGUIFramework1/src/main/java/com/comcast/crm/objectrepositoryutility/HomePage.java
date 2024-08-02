@@ -19,7 +19,6 @@ public class HomePage extends WebDriverUtility{
 	@FindBy(linkText="Products")   
 	private WebElement productLink;
 
-
 	@FindBy(linkText="Organizations")   
 	private WebElement orgLink;
 

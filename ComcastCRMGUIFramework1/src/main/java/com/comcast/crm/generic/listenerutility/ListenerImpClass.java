@@ -22,7 +22,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.comcast.crm.basetest.BaseClass;
 import com.comcast.crm.generic.webdriverutility.UtilityClassobject;
 
-public class ListenerImpClass implements ITestListener,ISuiteListener{
+public class ListenerImpClass implements ITestListener,ISuiteListener {
 	
 	
 	public ExtentReports report; //If we want to use this report in every TC,make this variable as static.

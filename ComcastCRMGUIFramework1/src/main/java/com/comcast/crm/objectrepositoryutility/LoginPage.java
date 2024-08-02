@@ -14,15 +14,13 @@ import com.comcast.crm.generic.webdriverutility.WebDriverUtility;
 //Rule1:create a separate java class/POM class creation
 public class LoginPage extends WebDriverUtility {   
 	
-
-
 	//Rule3:object initialization                 
 	WebDriver driver;         
 	public LoginPage(WebDriver driver) {    //constructor     
 		this.driver=driver;
 		  PageFactory.initElements(driver,this);
-
 	}
+	
 	//Rule2:object creation/object identification
 	@FindBy(name="user_name")         
 	private WebElement usernameEdt;
@@ -59,9 +57,9 @@ public class LoginPage extends WebDriverUtility {
 		waitForPageToLoad(driver);
 		driver.get(url);
 		driver.manage().window().maximize();
-		usernameEdt.sendKeys(username);
-		passwordEdt.sendKeys(password);
-		loginBtn.click();
+		getUsernameEdt().sendKeys(username);
+		getPasswordEdt().sendKeys(password);
+		getLoginBtn().click();
 	}
 	
 	
