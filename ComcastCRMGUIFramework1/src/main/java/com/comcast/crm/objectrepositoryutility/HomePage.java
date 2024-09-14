@@ -53,13 +53,10 @@ public class HomePage extends WebDriverUtility{
 		return moreLink;
 	}
 	
-	
 	public WebElement getProductLink() {
 		return productLink;
 	}
 	
-	
-
 	public WebDriver getDriver() {
 		return driver;
 	}
@@ -72,6 +69,10 @@ public class HomePage extends WebDriverUtility{
 		return signOutLnk;
 	}
 
+	
+	
+	
+	
 	public void navigateToCampaignPage()
 	{
 		Actions act=new Actions(driver);
